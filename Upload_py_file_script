@@ -1,0 +1,24 @@
+Last login: Wed Jan 11 12:19:14 on ttys000
+janmatthias@student-net-vpn-3314 ~ % pwd
+/Users/janmatthias
+janmatthias@student-net-vpn-3314 Downloads % scp hs22_bigdata_final_project_jm_euler.py jmatthias@euler.ethz.ch:/cluster/home/jmatthias  
+(jmatthias@euler.ethz.ch) Password: 
+hs22_bigdata_final_project_jm_euler.py                                                                                         100%   30KB 165.3KB/s   00:00    
+janmatthias@student-net-vpn-3314 Downloads % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
