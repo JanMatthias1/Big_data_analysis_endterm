@@ -1,7 +1,6 @@
 # Big_data_analysis_endterm
-There are two versions of the file, the difference is in the machine learning data processing. 
+There are two versions of the file, the difference is in the machine learning data processing. Please refer to the the normal version (HS22_BigData_Final_Project_JM.ipynb) for the correction. 
 
-Please refer to the the normal version (HS22_BigData_Final_Project_JM.ipynb) for the correction. 
 In one file medical unit is kept as is, in the hot encoded version it is divided into the various numbers (0,1,3,4 in the google collab version, where each number has a column with 1 or 0). Age was not normalised, as it is the only continous variable in the data set.
 One the google collab file, with the smaller datat set, in the RFC model and KNN there isn't a significant difference between the two data filtering methods (accuracy on test data set, approx. RFC=0.85 and KNN=0.84 in both models).
 The comments in the two version are identical besides some extra comments added in the hot encoded version to explain a few things.
