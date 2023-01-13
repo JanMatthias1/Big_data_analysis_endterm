@@ -1,7 +1,7 @@
 # Big_data_analysis_endterm
 There are two versions of the file, the difference is in the machine learning data processing. In one file medical unit is kept as is, in the hot encoded version it is divided. Age was not normalised, as it is the only continous variable in the data set.
 One the google collab file, with the smaller datat set, in the RFC model and KNN there isn't a significant difference between the two data filtering methods (accuracy on test data set, approx. RFC=0.85 and KNN=0.84 in both models)
-Euler notes:
+# Euler notes:
 The outcome used was death of the patient, when a date of death was present the patient was assumed to have died. No number (9999-999-999) was assumed to still be alive.
 When analysing the data with euler, it can be noted that the accuracy of the models diminish, which is intresting as I previously thought they would increase (more data, better prediction). 
 For example the Random Forest classifier model, with Search CV for parameter optimization, had an accuarcy of 0.72 (test data) with the bigger data set compared to 0.85 (also with search CV, test data, not hot encoded) with the smaller data set. This could be because the data set used in google collab (100'000 rows), was somehow "better data", where the models were able to have better accuracy. 
