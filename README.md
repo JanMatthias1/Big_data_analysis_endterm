@@ -9,12 +9,12 @@ The hot encoding version wasn't necessary, as CARTs can handle multiple variable
 # Euler notes:
 The outcome used was death of the patient, when a date of death was present the patient was assumed to have died. No number (9999-999-999) was assumed to still be alive.
 When analysing the data with euler, it can be noted that the accuracy of the models diminishes, which is interesting as I previously thought they would increase (more data, better prediction). 
-For example the Random Forest classifier model, with Search CV for parameter optimization, had an accuarcy of 0.72 (test data) with the bigger data set compared to 0.85 (also with search CV, test data, not hot encoded) with the smaller data set. This could be because the data set used in google collab (100'000 rows), was somehow "better data", where the models were able to have better accuracy. 
+For example the Random Forest classifier model, with Search CV for parameter optimization, had an accuarcy of 0.71, precision of 0.74 (test data) with the bigger data set compared to 0.85 accuracy and 0.98 precision (also with search CV, test data, not hot encoded) with the smaller data set. This could be because the data set used in google collab (100'000 rows), was somehow "better data", where the models were able to have better accuracy. 
 In euler more patient data is available, and most likley the model wasn't able to create/find good predictors for the model. 
 
-The KNN model has an accuracy of 0.69 with the euler data set compared to 0.84 on the smaller data set. 
+The KNN model has an accuracy of 0.68, precision of 0.78 with the euler data set compared to 0.84 accuracy and 0.98 precision on the smaller data set.
+The precision here is lower, most likley do to more patients that are alive. This can be seen in the various confusion matrixes, where there are more predicted alive that are dead compared to the collab data sets. Although the accuracy and precision are lower, the data sets are more "balanced".
 
 The feature importance in the larger data set compared to the smaller one also changes, where in the search cv model, intubated, age, pneumonia and USMR gain importance and medical unit decreases. 
-When looking at all of the confusion matrixes, there is a tendency that the model predicts the patient as dead even if they are alive and has more difficult predicting if the patient is alive. 
 
-As mentioned in the google collab script, it would be interesting to add more parameters, such as genetic ones, or even BMI,... to see if the model can be improved. Alternativley other machine learning methods could be used or other ways of filtering the data. 
+As mentioned in the google collab script, it would be interesting to add more parameters, such as genetic ones, or even BMI,... to see if the model can be improved. Alternativley other machine learning methods could be used or other ways of filtering the data. The data could be filtered to be more "balanced" between dead and alive, as this might help the ML process.
