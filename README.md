@@ -1,5 +1,5 @@
 # Big_data_analysis_endterm
-There are two versions of the file, the difference is in the machine learning data processing. In one file medical unit is kept as is, in the hot encoded version it is divided. 
+There are two versions of the file, the difference is in the machine learning data processing. In one file medical unit is kept as is, in the hot encoded version it is divided. Age was not normalised, as it is the only continous variable in the data set.
 One the google collab file, with the smaller datat set, in the RFC model there isn't a significant difference between the two data filtering methods. This is also the case for the KNN model.
 Euler notes:
 The outcome used was death of the patient, when a date of death was present the patient was assumed to have died. No number (9999-999-999) was assumed to still be alive.
