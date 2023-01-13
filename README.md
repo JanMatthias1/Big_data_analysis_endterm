@@ -13,7 +13,7 @@ For example the Random Forest classifier model, with Search CV for parameter opt
 In euler more patient data is available, and most likley the model wasn't able to create/find good predictors for the model. 
 
 The KNN model has an accuracy of 0.68, precision of 0.78 with the euler data set compared to 0.84 accuracy and 0.98 precision on the smaller data set.
-The precision here is lower, most likley do to more patients that are alive. This can be seen in the various confusion matrixes, where there are more predicted alive that are dead compared to the collab data sets. Although the accuracy and precision are lower, the data sets are more "balanced".
+This can be seen in the various confusion matrixes, where there are more predicted alive that are dead compared to the collab data sets. Although the accuracy and precision are lower, the data sets are more "balanced".
 
 The feature importance in the larger data set compared to the smaller one also changes, where in the search cv model, intubated, age, pneumonia and USMR gain importance and medical unit decreases. 
 
